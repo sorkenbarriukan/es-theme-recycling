@@ -139,7 +139,7 @@
 <glowColor>000000</glowColor>
 <glowSize>2</glowSize>
 <reflexion>0.50 0.0</reflexion>
-<zIndex>92</zIndex>
+<zIndex>192</zIndex>
 </image>
 
 <image name="personaje2" extra="true">
@@ -151,7 +151,7 @@
 <glowColor>ffffff60</glowColor>
 <glowSize>2</glowSize>
 <reflexion>0.50 0.0</reflexion>
-<zIndex>90</zIndex>
+<zIndex>190</zIndex>
 </image>
 
 <image name="personaje3" extra="true">
@@ -163,7 +163,7 @@
 <glowColor>ffffff60</glowColor>
 <glowSize>2</glowSize>
 <reflexion>0.50 0.0</reflexion>
-<zIndex>91</zIndex>
+<zIndex>191</zIndex>
 </image>
 
 <video name="backgroundvideosplash" extra="true">

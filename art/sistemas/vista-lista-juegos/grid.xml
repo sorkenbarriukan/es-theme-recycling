@@ -129,7 +129,7 @@
 <glowColor>000000</glowColor>
 <glowSize>2</glowSize>
 <reflexion>0.50 0.0</reflexion>
-<zIndex>92</zIndex>
+<zIndex>192</zIndex>
 </image>
 
 <image name="personaje2" extra="true">
@@ -141,7 +141,7 @@
 <glowColor>000000</glowColor>
 <glowSize>2</glowSize>
 <reflexion>0.50 0.0</reflexion>
-<zIndex>92</zIndex>
+<zIndex>192</zIndex>
 </image>
 
 <image name="personaje3" extra="true">
@@ -153,7 +153,7 @@
 <glowColor>000000</glowColor>
 <glowSize>2</glowSize>
 <reflexion>0.50 0.0</reflexion>
-<zIndex>92</zIndex>
+<zIndex>192</zIndex>
 </image>
   
 <text name="logoText">
