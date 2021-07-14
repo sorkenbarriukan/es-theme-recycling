@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+<view name="system">
+<image name="logo">
+<storyboard event="activate">
+<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+</storyboard>
+<storyboard event="deactivate">
+<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+</storyboard>
+<linearSmooth>true</linearSmooth>
+<storyboard event="activate">
+<animation property="scale" to="1.2" duration="1000" mode="easeOut" autoreverse="true" repeat="forever"/>
+</storyboard>
+</image>
+
+<carousel name="systemcarousel">
+<defaultTransition>instant</defaultTransition>
+<linearSmooth>true</linearSmooth>
+<zIndex>43</zIndex>	      
+<type>horizontal</type>
+<pos>0.0001 -0.364</pos>
+<size>1 1</size>
+<logoScale>0.677</logoScale>
+<logoSize>0.171 0.166</logoSize>
+<color>00000000</color>
+<maxLogoCount>6</maxLogoCount>
+<logoRotation>8</logoRotation>
+<logoRotationOrigin>3.50 0.5</logoRotationOrigin>
+<logoAlignment>left</logoAlignment>       
+</carousel>
+
+<text name="systemInfo">
+<glowColor>00000000</glowColor>
+<pos>0.0032 0.215</pos>
+<backgroundColor>00000000</backgroundColor>
+<color>516513</color>
+<rotation>0</rotation> 
+<fontPath>./art/sistemas/fuentes/Pixel LCD-7.ttf</fontPath>
+ <linearSmooth>true</linearSmooth>
+<fontSize>0.022</fontSize>
+<zIndex>199</zIndex>
+</text> 
+
+<image name="background0" extra="true">
+<tile>false</tile>
+<size>1 1</size>
+<pos>0 0</pos>
+<origin>0 0</origin>
+<path>./art/sistemas/fondos/logosilvering.png</path>
+<linearSmooth>true</linearSmooth>
+<zIndex>35</zIndex>
+</image>  
+
+<image name="background" extra="true">
+<tile>false</tile>
+<size>1 1</size>
+<pos>0 0</pos>
+<origin>0 0</origin>
+<path>./art/sistemas/fondos/grid.png</path>
+<linearSmooth>true</linearSmooth>
+<zIndex>15</zIndex>
+</image>  
+
+<video name="backgroundvideosplash" extra="true">
+<visible>true</visible> 
+<path>./art/sistemas/videos/splash.mp4</path>
+<audio>${v0.audio}</audio>
+<rotation>0</rotation>  
+<roundCorners>0.22</roundCorners>               
+<pos>0.5010 0.135</pos>
+<origin>0.5 0.5</origin>
+<size>0.170 0.149</size>
+<delay>0</delay>
+<showSnapshotNoVideo>false</showSnapshotNoVideo>
+<showSnapshotDelay>false</showSnapshotDelay>
+ <linearSmooth>true</linearSmooth>
+<color>FFFFFF</color>
+<zIndex>19</zIndex>
+</video>
+
+<video name="backgroundvideo" extra="true">
+<visible>true</visible>
+<rotation>0</rotation>  
+<roundCorners>0</roundCorners>   
+<size>1 1</size>
+<pos>0 0</pos>
+<origin>0 0</origin>
+<delay>0</delay>
+<showSnapshotNoVideo>false</showSnapshotNoVideo>
+<showSnapshotDelay>false</showSnapshotDelay>
+ <linearSmooth>true</linearSmooth>
+<color>FFFFFF</color>
+<zIndex>12</zIndex>
+</video>
+
+<image name="personaje" extra="true">
+<path>./art/sistemas/character/default.png</path>
+<path>./art/sistemas/character/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<color>FFFFFFFF</color>
+<origin>0 0</origin>
+<glowColor>000000</glowColor>
+<glowSize>2</glowSize>
+<reflexion>0.50 0.0</reflexion>
+<zIndex>192</zIndex>
+</image>
+
+<image name="personaje2" extra="true">
+<path>./art/sistemas/character/default.png</path>
+<path>./art/sistemas/character/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<color>ffffff</color>
+<origin>0 0</origin>
+<glowColor>ffffff60</glowColor>
+<glowSize>2</glowSize>
+<reflexion>0.50 0.0</reflexion>
+<zIndex>190</zIndex>
+</image>
+
+<image name="personaje3" extra="true">
+<path>./art/sistemas/character/default.png</path>
+<path>./art/sistemas/character/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<color>FE2EF7</color>
+<origin>0 0</origin>
+<glowColor>ffffff60</glowColor>
+<glowSize>2</glowSize>
+<reflexion>0.50 0.0</reflexion>
+<zIndex>191</zIndex>
+</image>
+
+<image name="cover1" extra="true">
+<origin>0.5 0.5</origin>
+<pos>0.501 0.60</pos>
+<maxSize>0.27 0.50</maxSize>
+<zIndex>100</zIndex>
+<path>{random:thumbnail}</path>
+<color>FFFFFFFF</color>
+<roundCorners>0.05</roundCorners>
+<reflexion>0.50 0.0</reflexion>
+</image>
+
+<image name="cover2" extra="true">
+<origin>0.5 0.5</origin>
+<pos>0.300 0.60</pos>
+<maxSize>0.17 0.30</maxSize>
+<zIndex>99</zIndex>
+<path>{random:thumbnail}</path>
+<color>FFFFFFFF</color>
+<roundCorners>0.05</roundCorners>
+<reflexion>0.50 0.0</reflexion>
+</image>
+
+<image name="cover3" extra="true">
+<origin>0.5 0.5</origin>
+<pos>0.170 0.60</pos>
+<maxSize>0.09 0.22</maxSize>
+<zIndex>98</zIndex>
+<path>{random:thumbnail}</path>
+<color>FFFFFFFF</color>
+<roundCorners>0.05</roundCorners>
+<reflexion>0.50 0.0</reflexion>
+</image>
+
+<image name="cover4" extra="true">
+<origin>0.5 0.5</origin>
+<pos>0.070 0.60</pos>
+<maxSize>0.04 0.18</maxSize>
+<zIndex>97</zIndex>
+<path>{random:thumbnail}</path>
+<color>FFFFFFFF</color>
+<roundCorners>0.05</roundCorners>
+<reflexion>0.50 0.0</reflexion>
+</image>
+
+<image name="cover5" extra="true">
+<origin>0.5 0.5</origin>
+<pos>0.701 0.60</pos>
+<maxSize>0.17 0.30</maxSize>
+<zIndex>99</zIndex>
+<path>{random:thumbnail}</path>
+<color>FFFFFFFF</color>
+<roundCorners>0.05</roundCorners>
+<reflexion>0.50 0.0</reflexion>
+</image>
+
+<image name="cover6" extra="true">
+<origin>0.5 0.5</origin>
+<pos>0.832 0.60</pos>
+<maxSize>0.09 0.22</maxSize>
+<zIndex>98</zIndex>
+<path>{random:thumbnail}</path>
+<color>FFFFFFFF</color>
+<roundCorners>0.05</roundCorners>
+<reflexion>0.50 0.0</reflexion>
+</image>
+
+<image name="cover7" extra="true">
+<origin>0.5 0.5</origin>
+<pos>0.932 0.60</pos>
+<maxSize>0.04 0.18</maxSize>
+<zIndex>97</zIndex>
+<path>{random:thumbnail}</path>
+<color>FFFFFFFF</color>
+<roundCorners>0.05</roundCorners>
+<reflexion>0.50 0.0</reflexion>
+</image>
+
+
+<helpsystem name="help">
+<visible>false</visible>
+<textColor>00000000</textColor>
+<iconColor>00000000</iconColor>
+</helpsystem>
+    
+<text name="logoText">
+<fontSize>0.020</fontSize>
+<fontPath>./art/sistemas/fuentes/Pixel LCD-7.ttf</fontPath>
+<color>${baseColor}</color>
+<forceUppercase>true</forceUppercase>
+</text>
+<image name="logo">
+<path>./art/sistemas/ticket/${system.theme}.png</path>
+<path>./${system.theme}/art/system-${lang}.png</path>
+<path>./${system.theme}/art/system-${lang}.svg</path>
+</image>
+
+<text name="fullName" extra="true">
+<visible>false</visible>
+</text>
+
+<image name="box1" extra="true">
+<visible>false</visible>
+<pos>-0.9401 -0.9960</pos>
+<maxSize>0.0 0.0</maxSize>
+<color>00000000</color>
+</image>
+
+<image name="box2" extra="true">
+<visible>false</visible>
+<pos>-0.99153 -0.99892</pos>
+<maxSize>0.0 0.0</maxSize>
+<color>00000000</color>
+</image>
+
+<image name="box3" extra="true">
+<visible>false</visible>
+<origin>0.5 0.5</origin>
+<pos>-0.99153 -0.99892</pos>
+<maxSize>0.0 0.0</maxSize>
+<color>00000000</color>
+</image>
+
+<image name="consola,pointer,pointerl,background2,background3" extra="true">
+<visible>false</visible>
+</image>
+</view>
+</theme>

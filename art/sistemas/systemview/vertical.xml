@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+<view name="system">
+<image name="logo">
+<storyboard event="activate">
+<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+</storyboard>
+<storyboard event="deactivate">
+<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+</storyboard>
+<linearSmooth>true</linearSmooth>
+<storyboard event="activate">
+<animation property="scale" to="1.2" duration="1000" mode="easeOut" autoreverse="true" repeat="forever"/>
+</storyboard>
+</image>
+
+<carousel name="systemcarousel">
+<defaultTransition>instant</defaultTransition>
+<linearSmooth>true</linearSmooth>
+<zIndex>33</zIndex>	      
+<type>vertical</type>
+<pos>-0.355 0</pos>
+<size>1 1</size>
+<logoScale>1.05</logoScale>
+<logoSize>0.130 0.260</logoSize>
+<color>00000000</color>
+<maxLogoCount>05</maxLogoCount>
+<logoRotation>8</logoRotation>
+<logoRotationOrigin>3.10 0.5</logoRotationOrigin>
+<logoAlignment>center</logoAlignment>       
+</carousel>
+
+<text name="systemInfo">
+<glowColor>00000000</glowColor>
+<pos>0.2632 0.755</pos>
+<backgroundColor>00000000</backgroundColor>
+<color>befa05</color>
+<rotation>0</rotation> 
+<fontPath>./art/sistemas/fuentes/Pixel LCD-7.ttf</fontPath>
+ <linearSmooth>true</linearSmooth>
+<fontSize>0.022</fontSize>
+<reflexion>0.4 0.4</reflexion>
+<zIndex>199</zIndex>
+</text> 
+
+<image name="background0" extra="true">
+<visible>false</visible>
+</image>  
+
+<image name="background" extra="true">
+<visible>true</visible>
+<tile>false</tile>
+<size>1 1</size>
+<pos>0 0</pos>
+<origin>0 0</origin>
+<path>./art/sistemas/fondos/vertical.png</path>
+<linearSmooth>true</linearSmooth>
+<zIndex>35</zIndex>
+</image>   
+
+<image name="background3" extra="true">
+<tile>false</tile>
+<roundCorners>0.01</roundCorners>   
+<pos>0.755 0.512</pos>
+<origin>0.5 0.5</origin>
+<size>0.4400 0.485</size>
+<path>./art/sistemas/wall/default.png</path>
+<path>./art/sistemas/wall/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<zIndex>14</zIndex>
+</image>
+
+<image name="wallpaper" extra="true">
+<tile>false</tile>
+<size>1 1</size>
+<pos>0 0</pos>
+<origin>0 0</origin>
+<path>./art/sistemas/wall/default.png</path>
+<path>./art/sistemas/wall/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<zIndex>13</zIndex>
+<storyboard>
+<animation property="scale" to="1.4" begin="350" autoreverse="true" duration="29200" repeat="forever" mode="easyIn"/>
+<animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+</storyboard>
+</image>
+
+<image name="pointer,pointerl" extra="true">
+<visible>false</visible>
+</image>
+
+<video name="backgroundvideo" extra="true">
+<visible>true</visible>
+<rotation>0</rotation>  
+<roundCorners>0.01</roundCorners>   
+<pos>0.755 0.512</pos>
+<origin>0.5 0.5</origin>
+<size>0.4400 0.485</size>
+<delay>0</delay>
+<showSnapshotNoVideo>false</showSnapshotNoVideo>
+<showSnapshotDelay>false</showSnapshotDelay>
+ <linearSmooth>true</linearSmooth>
+<color>FFFFFF</color>
+<zIndex>15</zIndex>
+</video>
+
+
+<image name="consola" extra="true">
+<path>./art/sistemas/consoles/default.png</path>
+<path>./art/sistemas/consoles/${system.theme}.png</path>
+<color>FFFFFFFF</color>
+<origin>0 0</origin>
+<pos>0.595 0.865</pos>
+<maxSize>0.09 0.09</maxSize>
+<reflexion>0.4 0.4</reflexion>
+<storyboard repeat="forever">
+<animation property="rotation" from="-13" to="13" duration="100" autoreverse="true" begin="4000" repeat="3"/>
+</storyboard>  
+<zIndex>96</zIndex>
+</image>
+
+<image name="personaje" extra="true">
+<path>./art/sistemas/character/default.png</path>
+<path>./art/sistemas/character/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<color>FFFFFFFF</color>
+<origin>0 0</origin>
+<glowColor>000000</glowColor>
+<glowSize>2</glowSize>
+<reflexion>0.50 0.0</reflexion>
+<zIndex>92</zIndex>
+</image>
+
+<image name="personaje2" extra="true">
+<path>./art/sistemas/character/default.png</path>
+<path>./art/sistemas/character/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<color>ffffff</color>
+<origin>0 0</origin>
+<glowColor>ffffff60</glowColor>
+<glowSize>2</glowSize>
+<reflexion>0.50 0.0</reflexion>
+<zIndex>90</zIndex>
+</image>
+
+<image name="personaje3" extra="true">
+<path>./art/sistemas/character/default.png</path>
+<path>./art/sistemas/character/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<color>FE2EF7</color>
+<origin>0 0</origin>
+<glowColor>ffffff60</glowColor>
+<glowSize>2</glowSize>
+<reflexion>0.50 0.0</reflexion>
+<zIndex>91</zIndex>
+</image>
+
+<image name="box1" extra="true">
+<origin>0.5 0.5</origin>
+<pos>0.601 0.60</pos>
+<maxSize>0.07 0.30</maxSize>
+<zIndex>40</zIndex>
+<path>{random:thumbnail}</path>
+<color>FFFFFFFF</color>
+<roundCorners>0.05</roundCorners>
+</image>
+
+<image name="box2" extra="true">
+<origin>0.5 0.5</origin>
+<pos>0.551 0.60</pos>
+<maxSize>0.04 0.20</maxSize>
+<zIndex>40</zIndex>
+<path>{random:thumbnail}</path>
+<color>FFFFFFFF</color>
+<roundCorners>0.05</roundCorners>
+</image>
+
+
+<image name="logofolder" extra="true">
+<origin>0.5 0.5</origin>
+<pos>0.674 0.217</pos>
+<maxSize>0.07 0.05</maxSize>
+<zIndex>95</zIndex>
+<path>./art/sistemas/logosimples/${system.theme}.png</path>
+<color>FFFFFFFF</color>
+<roundCorners>0.05</roundCorners>
+<visible>true</visible>
+<reflexion>0</reflexion>
+<opacity>0</opacity>
+<scale>0</scale>
+<scaleOrigin>0 0.5</scaleOrigin>
+<storyboard repeat="1">
+<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+<animation property="scale" from="0" to="1" duration="0"/>
+</storyboard>
+</image>
+
+<helpsystem name="help">
+<visible>true</visible>
+<textColor>9abb34</textColor>
+<iconColor>9abb34</iconColor>
+<fontSize>0.020</fontSize>
+<pos>0.430 0.02</pos>
+<zIndex>91</zIndex>
+</helpsystem>
+    
+<text name="logoText">
+<fontSize>0.020</fontSize>
+<fontPath>./art/sistemas/fuentes/Pixel LCD-7.ttf</fontPath>
+<color>${baseColor}</color>
+<forceUppercase>true</forceUppercase>
+</text>
+<image name="logo">
+<path>./art/sistemas/ticket/${system.theme}.png</path>
+<path>./${system.theme}/art/system-${lang}.png</path>
+<path>./${system.theme}/art/system-${lang}.svg</path>
+</image>
+
+
+</view>
+</theme>

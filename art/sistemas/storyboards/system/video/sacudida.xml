@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+<view name="system, basic, detailed, grid, carousel, gamecarousel">
+<video name="backgroundvideo" extra="true">
+<storyboard repeat="forever">
+<animation property="rotation" from="-13" to="13" duration="100" autoreverse="true" begin="4500" repeat="3"/>
+</storyboard>
+</video>
+
+<video name="md_video">
+<storyboard repeat="forever">
+<animation property="rotation" from="-13" to="13" duration="100" autoreverse="true" begin="4500" repeat="3"/>
+</storyboard>
+</video>
+
+<video name="md_image">
+<storyboard repeat="forever">
+<animation property="rotation" from="-13" to="13" duration="100" autoreverse="true" begin="4500" repeat="3"/>
+</storyboard>
+</video>
+
+<image name="predeterminado" extra="true">
+<storyboard repeat="forever">
+<animation property="rotation" from="-13" to="13" duration="100" autoreverse="true" begin="4500" repeat="3"/>
+</storyboard>
+</image>
+</view>
+</theme>
