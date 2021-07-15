@@ -71,6 +71,18 @@
 <linearSmooth>true</linearSmooth>
 <zIndex>25</zIndex>
 </image>  
+
+<image name="background2" extra="true">
+<visible>true</visible>
+<tile>false</tile>
+<color>FFFFFF</color>
+<size>0.916 0.896</size>
+<pos>0.041 0</pos>
+<origin>0 0</origin>
+<path>./art/sistemas/fondos/logosilvering.png</path>
+<linearSmooth>true</linearSmooth>
+<zIndex>160</zIndex>
+</image>
  
  <image name="background3" extra="true">
 <tile>false</tile>
@@ -87,7 +99,7 @@
 </storyboard>
 </image>
 
-<image name="pointer,pointerl,background2,fondomarquee,consola" extra="true">
+<image name="pointer,pointerl,fondomarquee,consola" extra="true">
 <visible>false</visible>
 </image>
 
@@ -196,6 +208,25 @@
 <size>0.146 0.12</size>
 <linearSmooth>true</linearSmooth>
 <zIndex>95</zIndex> 
+<storyboard event="open">
+<animation property="opacity" from="0" to="0" duration="250" mode="easeIn"/>
+<animation property="opacity" from="0" to="1" duration="400" mode="easeIn" begin="250"/>
+<animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="activateNext">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="activatePrev">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="deactivateNext">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>
+<storyboard event="deactivatePrev">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>  
 </image>
 
 <image name="logo">
@@ -204,6 +235,25 @@
 <size>0.146 0.12</size>
 <linearSmooth>true</linearSmooth>
 <zIndex>95</zIndex> 
+<storyboard event="open">
+<animation property="opacity" from="0" to="0" duration="250" mode="easeIn"/>
+<animation property="opacity" from="0" to="1" duration="400" mode="easeIn" begin="250"/>
+<animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="activateNext">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="activatePrev">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="deactivateNext">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>
+<storyboard event="deactivatePrev">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>  
 </image>
 
 <text name="fullName" extra="true">
@@ -242,6 +292,25 @@
 <size>0.030 0.029</size>
 <color>516513</color>
 <unfilledColor>9abb34</unfilledColor>
+<storyboard event="open">
+<animation property="opacity" from="0" to="0" duration="250" mode="easeIn"/>
+<animation property="opacity" from="0" to="1" duration="400" mode="easeIn" begin="250"/>
+<animation property="y" from="1.01" begin="0" duration="1100" mode="Bump"/>
+</storyboard>
+<storyboard event="activateNext">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="y" from="1.01" begin="0" duration="1100" mode="Bump"/>
+</storyboard>
+<storyboard event="activatePrev">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="y" from="1.01" begin="0" duration="1100" mode="Bump"/>
+</storyboard>
+<storyboard event="deactivateNext">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>
+<storyboard event="deactivatePrev">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>  
 </rating>
 
 <image name="md_manual,md_nomanual">

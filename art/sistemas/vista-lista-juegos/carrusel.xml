@@ -75,6 +75,25 @@
 <size>0.05 0.03</size>
 <color>516513</color>
 <unfilledColor>9abb34</unfilledColor>
+<storyboard event="open">
+<animation property="opacity" from="0" to="0" duration="250" mode="easeIn"/>
+<animation property="opacity" from="0" to="1" duration="400" mode="easeIn" begin="250"/>
+<animation property="y" from="1.01" begin="0" duration="1100" mode="Bump"/>
+</storyboard>
+<storyboard event="activateNext">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="y" from="1.01" begin="0" duration="1100" mode="Bump"/>
+</storyboard>
+<storyboard event="activatePrev">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="y" from="1.01" begin="0" duration="1100" mode="Bump"/>
+</storyboard>
+<storyboard event="deactivateNext">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>
+<storyboard event="deactivatePrev">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>  
 </rating>
 
 <imagegrid name="gamegrid">
@@ -131,8 +150,24 @@
 <pos>0.0190 0.950</pos>
 <maxSize>0.025 0.018</maxSize>
 <zIndex>200</zIndex>
-<storyboard repeat="forever">
-<animation property="rotation" from="-13" to="13" duration="100" autoreverse="true" begin="6000" repeat="3"/>
+<storyboard event="open">
+<animation property="opacity" from="0" to="0" duration="250" mode="easeIn"/>
+<animation property="opacity" from="0" to="1" duration="400" mode="easeIn" begin="250"/>
+<animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="activateNext">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="activatePrev">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="deactivateNext">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>
+<storyboard event="deactivatePrev">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
 </storyboard>  
 </image>
 
@@ -198,24 +233,21 @@
 <animation property="opacity" from="0" to="0" duration="250" mode="easeIn"/>
 <animation property="opacity" from="0" to="1" duration="400" mode="easeIn" begin="250"/>
 <animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
-<animation property="scale" to="1.02" begin="1100" autoreverse="true" duration="300" repeat="forever" mode="easyIn"/>
 </storyboard>
 <storyboard event="activateNext">
 <animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
 <animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
-<animation property="scale" to="1.02" begin="1100" autoreverse="true" duration="300" repeat="forever" mode="easyIn"/>
 </storyboard>
 <storyboard event="activatePrev">
 <animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
 <animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
-<animation property="scale" to="1.02" begin="1100" autoreverse="true" duration="300" repeat="forever" mode="easyIn"/>
 </storyboard>
 <storyboard event="deactivateNext">
 <animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
 </storyboard>
 <storyboard event="deactivatePrev">
 <animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
-</storyboard> 
+</storyboard>  
 </image>
 
 <image name="md_marquee">
@@ -228,24 +260,21 @@
 <animation property="opacity" from="0" to="0" duration="250" mode="easeIn"/>
 <animation property="opacity" from="0" to="1" duration="400" mode="easeIn" begin="250"/>
 <animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
-<animation property="scale" to="1.02" begin="1100" autoreverse="true" duration="300" repeat="forever" mode="easyIn"/>
 </storyboard>
 <storyboard event="activateNext">
 <animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
 <animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
-<animation property="scale" to="1.02" begin="1100" autoreverse="true" duration="300" repeat="forever" mode="easyIn"/>
 </storyboard>
 <storyboard event="activatePrev">
 <animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
 <animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
-<animation property="scale" to="1.02" begin="1100" autoreverse="true" duration="300" repeat="forever" mode="easyIn"/>
 </storyboard>
 <storyboard event="deactivateNext">
 <animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
 </storyboard>
 <storyboard event="deactivatePrev">
 <animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
-</storyboard> 
+</storyboard>  
 </image>	
 
 <video name="md_video">
